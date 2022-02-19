@@ -1,4 +1,4 @@
-# Insert Lesson Title
+# Java - Object Oriented Programming
 
 ## Dependencies
 
@@ -10,10 +10,14 @@ Refer to the following markdown file for the respective sections of the class:
 ## Lesson Objectives
 
 Learners will understand:
-- Insert the knowledge to be acquired
+- What is OOP and its use cases.
+- The concept of encapsulation, inheritance, polymorphism and abstraction. 
 
 Learners will be able to:
-- Insert the skillset to be acquired
+- Implement encapsulation with `private` modifiers and accessor methods.
+- Implement inheritance with `protected` modifiers where protected members are accessible by child class.
+- Implement polymorphism using method overloading.
+- Implement abstraction with `abstract class` and `abstract method`. 
 
 
 ## Lesson Plan
