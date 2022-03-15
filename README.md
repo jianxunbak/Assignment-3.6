@@ -17,7 +17,7 @@ Learners will be able to:
 - Implement encapsulation with `private` modifiers and accessor methods.
 - Implement inheritance with `protected` modifiers where protected members are accessible by child class.
 - Implement polymorphism using method overloading.
-- Implement abstraction with `abstract class` and `abstract method`. 
+- Implement abstraction with `interfaces` and `abstract method`. 
 
 
 ## Lesson Plan
