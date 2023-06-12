@@ -25,7 +25,7 @@ Learners will be able to:
 |Duration|What|How or Why|
 |--------|-----|-------|
 |- 5mins |Start zoom session|So that students can join early and start class on time|
-|15 mins|Self studies check-in|Does every students have JDK installed? Are there any questions on self-studies? If the students do not have SDK installed, they can practice in class using w3schools links provided in the self studies.|
+|15 mins|Self studies check-in|Are there any questions on self-studies? |
 |15 mins|I DO Part 1|Instructor demonstrates encapsulation and inheritance|
 |15 mins|WE DO Part 1|Learners implements encapsulation and inheritance|
 |15 mins|I DO Part 2|Instructors demonstrate polymorphism through method overloading|
