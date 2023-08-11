@@ -224,7 +224,7 @@ public Student(int studentId, String course, int yearEnrolled) {
 Our student constructor will also take in `name` and `birthYear` as arguments. The `name` and `birthYear` will be passed to the `Person` constructor using `super(name, birthYear)`.
 
 ```java
-public Student(int studentId, String course, int yearEnrolled, String name, int birthYear) {
+public Student(String name, int birthYear, int studentId, String course, int yearEnrolled) {
   super(name, birthYear); // This calls Person(String name, int birthYear)
   this.studentId = studentId;
   this.course = course;
@@ -236,7 +236,7 @@ public Student(int studentId, String course, int yearEnrolled, String name, int 
 Note that we cannot call `super()` and `this()` in the same constructor. This is because both `super()` or `this()` must be the first statement in the constructor.
 
 ```java
-public Student(int studentId, String course, int yearEnrolled, String name, int age) {
+public Student(String name, int birthYear, int studentId, String course, int yearEnrolled) {
   super(name, age); // This calls Person(String name, int age)
   this(studentId, course, yearEnrolled); // ❌ This is not allowed
 }
@@ -585,8 +585,17 @@ Let's define a `Drivable` interface.
 public interface Drivable {
   void drive();
   void stop();
+
+  // Java 8 onwards - default method
+  default void honk() {
+    System.out.println("Honk!");
+  }
 }
 ```
+
+Default methods were added in Java 8. This was because previously it was not possible to add new methods to an interface without breaking the existing implementations of the interface.
+
+Now, the classes that implement the interface can choose to override the default method with their own implementation, or they can simply use the default implementation.
 
 ```java
 public class Car implements Trackable, Drivable {
@@ -606,6 +615,16 @@ public class Car implements Trackable, Drivable {
     System.out.println("Stopping car...");
   }
 }
+```
+
+Test the `Car` class with the following code.
+
+```java
+Car car = new Car("Toyota", 2022);
+car.track();
+car.drive();
+car.stop();
+car.honk();
 ```
 
 ### 👨‍💻 Activity: Abstraction
