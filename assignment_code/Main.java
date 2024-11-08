@@ -1,17 +1,18 @@
 package assignment_code;
 
 public class Main {
-    public static void main (String args[]){
-        // School school1 = new School("Random school","Random address", 5);
-        // Teacher teacher1 = new Teacher("Bob", 34, "Male", "Math");
-        // Student student1 = new Student("Apple", 12, "Female", 1);
-        // Student student2 = new Student("Gerard", 15, "Male", 4);
+    public static void main(String args[]) {
+        School school = new School("NUS", 5, "Kent Ridge");
+        Teacher teacher = new Teacher("Micheal", 40, "Male", "Science");
+        Student student1 = new Student("John", 23, "Male", "first");
+        Student student2 = new Student("Jane", 24, "Female", "second");
 
-        // school1.addFloor(5);
-        // System.out.println(school1.getNumberOfFloors());
-        // school1.describe();
-        // teacher1.introduce();
-        // student1.introduce();
-        // student2.introduce();
+        school.addFloor(5);
+        System.out.println("Number of floors in school: " + school.getNumberOfFloors());
+        school.describe();
+        teacher.introduce();
+        student1.introduce();
+        student2.introduce();
     }
+
 }
